@@ -1,0 +1,375 @@
+#parrafo1 {
+    color: brown;
+    font-weight: bold;
+    text-align: right;
+}
+
+#parrafo2 {
+    color: green;
+    font-weight: light;
+    text-align: center;
+}
+
+#parrafo3 {
+    color: blue;
+    text-transform: uppercase;
+    /*Mayuscula*/
+    text-align: justify;
+}
+
+.ClaseParrafos {
+    background-color: burlywood;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecera {
+    background-color: #EEEEEE;
+    padding: 10px;
+    /*Margen-interno*/
+    color: #539cdc;
+}
+
+#menu {
+    background-color: #337AB7;
+    padding: 10px;
+    margin-bottom: 5px;
+    /*Margen-abajo*/
+}
+
+a.item_menu {
+    color: white;
+    /*Color texto*/
+    text-decoration: none;
+    /*Quitar subrayado*/
+    padding-top: 10px;
+    /*arriba*/
+    padding-bottom: 10px;
+    /*abajo*/
+    padding-left: 5px;
+    /*izq*/
+    padding-right: 5px;
+    /*der*/
+}
+
+a.item_menu:hover {
+    background-color: #539cdc;
+    /*Color de fondo*/
+}
+
+#div1 {
+    background-color: burlywood;
+    margin: 20px
+}
+
+#div2 {
+    background-color: burlywood;
+    margin-left: 20px;
+}
+
+#div3 {
+    background-color: burlywood;
+    margin-right: 20px;
+    /*Margen derecho*/
+    margin-left: 20px;
+    /*Margen izquierdo*/
+    margin-top: 40px;
+    /*Margen arriba*/
+    margin-bottom: 40px;
+    /*Margen abajo*/
+}
+
+#div4 {
+    background-color: burlywood;
+    margin: 40px;
+    padding: 20px;
+}
+
+#div5 {
+    background-color: burlywood;
+    margin: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer {
+    background-color: #337AB7;
+    color: white;
+    padding: 10px;
+    box-shadow: 10px 5px 5px gray;
+    /*sombra*/
+    font-size: small;
+    /*Tamaño: pequeña*/
+}
+
+/* DROPDOWN ------------------ */
+/* 1 Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 2 Menú desplegable (oculto por defecto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/* 3 Opciones dentro del dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+/* 4 Efecto al pasar el ratón sobre una opción */
+.dropdown-content a:hover {
+    background-color: #337AB7;
+    color: white;
+}
+
+/* 5 Mostrar el menú al pasar el mouse sobre el contenedor */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 6 Cambiar color del botón al pasar el mouse */
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
+}
+
+/* FIN DE DROPDOWN ----------------*/
+
+#img1 {
+    border: 5px solid red;
+    width: 30%;
+}
+
+#img2 {
+    width: 30%;
+    border-radius: 5%;
+    border: 2px solid gray;
+}
+
+#img3 {
+    width: 30%;
+    opacity: 0.5;
+    /*De 0 a 1. 0=muy poco 1=sin opacidad*/
+}
+
+#img3:hover {
+    opacity: 1;
+    width: 32%;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.div_izquierda {
+    width: 50%;
+    /*Ambos divs ocuparan el 505 del ancho del contendedor*/
+    height: 400px;
+    background-color: greenyellow;
+    margin-right: 10px;
+}
+
+.div_derecha {
+    width: 50%;
+    /*Ambos divs ocuparan el 50% del ancho del contenedor*/
+    background-color: aqua;
+}
+
+#deg1 {
+    height: 200px;
+    background-image: linear-gradient(blue, skyblue);
+}
+
+#deg2 {
+    height: 200px;
+    background-image: linear-gradient(blue, white, green);
+}
+
+#deg3 {
+    height: 200px;
+    background-image: linear-gradient(to right, green, yellow, red);
+}
+
+@font-face {
+    font-family: 'Instagram';
+    src: url('Instagram.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#deg4 {
+    font-family: Instagram;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    height: 400px;
+    background-image: linear-gradient(to right,
+            #523FCF, #AF2890, #E8223C, #F68458);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#fondoColor{
+        background-color: rgb(172, 241, 246);
+        height: 1500px;
+        width: 100%;
+        z-index: -1;/*coloca el fondo detras del contenido*/
+        position: absolute; /*Posicion absoluta para que ocupe toda la pantalla*/    
+    }
+
+
+#fondoImagen{
+        background-image: url("3.jpg");
+        height: 1500px;
+        width: 100%;
+        position: absolute; /*Posicion absoluta para que ocupe toda la pantalla*/
+        background-size: cover;/*cubre todo el fondo*/
+        background-repeat: no-repeat;/*No repetir imagen*/
+         z-index: -1;/*coloca el fondo detras del contenido*/
+         opacity: 0.5;    
+    }
+
+#fondoFijo{
+        background-image: url("1.jpg");
+        height: 1500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+        z-index: -1;
+        position: absolute;
+
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    } 
+
+#transition{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 1s; /
+ }
+ 
+#transicion:hover{
+    width: 200px;
+}
+
+#animacion{
+   width: 100px;
+   height: 100px;
+   background-color: blue; 
+   animation-name: ejemplo1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes ejemplo1{
+    from{background-color: blue;}
+    to{background-color: red;}
+}
+
+#animacion2{
+   width: 100px;
+   height: 100px;
+   background-color: green; 
+   animation-name: ejemplo2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   position: relative;
+}
+
+@keyframes ejemplo2{
+    0%{left: 0px; top: 0px;}
+    25%{left: 200px; top: 0px;}
+    50%{left: 200px; top:200px;}
+    75%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+}
+
+.formulario-tabla {
+    border-collapse: separate;
+    border-spacing: 0 5px; 
+}
+
+.col-etiqueta {
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+
+.input-estilizado {
+    font-family: Arial, sans-serif; 
+    font-size: 14px;                
+    font-weight: bold;               
+    color: blue;                  
+    
+    padding: 5px;                    
+    margin-bottom: 5px;              
+    
+    border: 1px solid #767676;
+    border-radius: 3px;
+    outline: none;
+    width: 250px;
+}
+
+
+.input-destacado {
+    border: 2px solid #000;
+}
+
+
+.contenedor-botones {
+    padding-top: 10px;
+}
+
+.btn {
+    padding: 5px 15px;       
+    border-radius: 5px;      
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.btn-enviar {
+    background-color: green;
+}
+
+
+.btn-enviar:hover {
+    background-color: #00a000;
+}
+
+.btn-borrar {
+    background-color: red;
+}
+
+
+.btn-borrar:hover {
+    background-color: #ff4d4d;
+}
